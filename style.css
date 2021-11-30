@@ -1,0 +1,63 @@
+:root {
+    --main-color: #54436B;
+    --secondary-color: #50CB93;
+    --tertiary-color: #71EFA3;
+    --quaternary-color: #ACFFAD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+}
+
+.main__card {
+    width: 500px;
+    height: 520px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid var(--quaternary-color);
+    background: var(--secondary-color);
+}
+
+.main__card > img {
+    display: block;
+    width: 200px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: var(--tertiary-color);
+    border: 3px solid var(--quaternary-color);
+    object-fit: cover;
+}
+
+.main__card h1, h2, h3{
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background: var(--tertiary-color);
+    border: 3px solid var(--quaternary-color);
+}
+
+#temperature-value::after {
+    content: ' °C';
+}
+
+#wind-speed::after {
+    content: ' m/s';
+}
+
+#temperature-description {
+    text-transform: uppercase;
+}
